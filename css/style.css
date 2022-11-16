@@ -4,6 +4,7 @@
   padding: 0;
   list-style-type: none;
   box-sizing: border-box;
+  font-family: 'Basic';
 }
 /* Navbar */
 nav {
@@ -99,6 +100,8 @@ nav ul li .contact {
 /* Service */
 #service{
   margin-top: 120px;
+  position: relative;
+  z-index: 1;
 }
 #service .span-bottom {
   flex-direction: column;
@@ -113,7 +116,9 @@ nav ul li .contact {
   font-weight: 600;
 }
 .product-list{
-    gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
 }
 .product-list .card-a{
   background-color: #FDF8E3!important;
@@ -153,8 +158,83 @@ nav ul li .contact {
   border-radius: 0; 
   text-transform: uppercase;
 }
-
-
 .cards > *{
   margin: 0 10px;
+}
+
+/* background-color */
+.background {
+  margin-top: -350px;
+  width: 100%;
+  position: absolute;
+  height: 65vh;
+  background-color: #020e35;
+  z-index: -1;
+}
+
+/* Portofolios */
+#portfolios{
+  position: relative;
+  z-index: 1;
+  background: #020e35;
+}
+#portfolios .span-bottom {
+  flex-direction: column;
+}
+#portfolios .bor-bottom {
+  margin: -5px auto;
+  width: 110px;
+  height: 3px;
+  background-color: #e73587;
+}
+#portfolios .title-text{
+  color: #fff!important;
+}
+#portfolios .leads{
+  margin-top: 15px;
+  color: #fff!important;
+}
+#portfolios .lead{
+  margin-top: 40px!important;
+  color: #fff!important;
+}
+#portfolios .btn{
+  color: #fff;
+  padding: 10px 30px!important;
+  background: linear-gradient(270deg, #8c32f0 0%, #e73587 100%);
+  border-radius: 0;
+}
+
+/* contact-us */
+#contact-us{
+  padding: 100px 50px!important;
+}
+.contact-us .text-group .leads{
+  font-size: 30px;
+  font-weight: 600;
+  margin: 0;
+}
+.contact-us .text-group .title-text{
+  margin: 0;
+  padding: 0;
+  font-size: 80px;
+  font-weight: 500;
+  font-family: 'Basic';
+}
+.contact-us .text-group .title-text .pink{
+  color: #E73587!important;
+}
+form input{
+  padding: 10px;
+  width: 100%;
+}
+form textarea{
+  width: 100%;
+  padding: 10px;
+}
+form button{
+  color: #fff!important;
+  padding: 10px 30px!important;
+  background: linear-gradient(270deg, #8c32f0 0%, #e73587 100%);
+  border-radius: 0;
 }
