@@ -49,6 +49,9 @@ nav ul li .active:hover{
 }
 
 /* Logo Packed */
+.button-wrapper{
+  margin-top: -140px;
+}
 nav .square {
   position: absolute;
   z-index: 999;
@@ -355,6 +358,9 @@ form button {
     right: 20px;
     opacity: 0;
   }
+  .button-wrapper{
+    margin-top: -45px;
+  }
   .jumbo-view .title-text{
     font-size: 4.8em;
   }
@@ -402,6 +408,25 @@ form button {
   }
 }
 @media screen and (min-width:767px) and (max-width:1023px) {
+  nav{
+    height: 70px;
+    transition: 0.6s ease-in-out;
+  }
+  nav button{
+    margin: 0!important;
+    position: absolute;
+    right: 50px;;
+    z-index: 1000;
+  }
+  nav .square{
+    position: absolute;
+    z-index: -999;
+    top: -25px;
+    left: 50px;
+  }
+  .button-wrapper{
+    margin-top: -40px;
+  }
   .cards{
     flex-direction: column;
   }
