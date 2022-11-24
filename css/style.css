@@ -355,18 +355,27 @@ form button {
     right: 20px;
     opacity: 0;
   }
+  .jumbo-view .title-text{
+    font-size: 4.8em;
+  }
   #about-us{
     position: relative;
     z-index: 10000;
     justify-content: center;
   }
   #about-us .lead{
-    margin: 0 auto;
-    padding: 30px 100px;
+    width: 85%;
+    padding: 0!important;
     text-align: center;
   }
   .product-list .card{
     justify-content: center;
+  }
+  #service .title-text{
+    padding: 0 50px!important;
+  }
+  #portfolios .p-5 {
+    padding: 0!important;
   }
   #portfolios .p-5 .row{
     justify-content: center;
@@ -374,8 +383,22 @@ form button {
   .cards{
     flex-direction: column;
   }
+  .cards .img img{
+    width: 100%;
+  }
   .cards > *{
     margin: 20px;
+  }
+  #contact-us .container-fluid{
+    padding: 0!important;
+  }
+
+  .contact-us .text-group .leads{
+    font-size: 1.5em;
+  }
+  .contact-us .text-group .title-text{
+    font-size: 3.5em;
+    margin-bottom: 50px;
   }
 }
 @media screen and (min-width:767px) and (max-width:1023px) {
