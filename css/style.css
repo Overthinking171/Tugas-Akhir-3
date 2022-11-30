@@ -343,8 +343,10 @@ form button {
 
 @media screen and (max-width: 767px){
   nav{
-    height: 70px;
     transition: 0.6s ease-in-out;
+  }
+  .navbar{
+    padding: 40px!important;
   }
   nav button{
     margin: 0!important;
@@ -409,8 +411,11 @@ form button {
 }
 @media screen and (min-width:767px) and (max-width:1023px) {
   nav{
-    height: 70px;
+    padding: 20px!important;
     transition: 0.6s ease-in-out;
+  }
+  .navbar{
+    padding: 40px!important;
   }
   nav button{
     margin: 0!important;
